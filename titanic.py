@@ -13,10 +13,10 @@ import time
 from tensorboardX import SummaryWriter
 from random import shuffle
 
-writer = SummaryWriter('/home/local/ZOHOCORP/jai-pt1774/runs/t91')
+writer = SummaryWriter('/runs/t91')
 
-train_data="/home/local/ZOHOCORP/jai-pt1774/Desktop/Titanic/train.csv"
-test_data="/home/local/ZOHOCORP/jai-pt1774/Desktop/Titanic/test.csv"
+train_data="/train.csv"
+test_data="/test.csv"
 
 
 
@@ -80,17 +80,7 @@ inp_test = df_test.drop(['PassengerId','Name','Ticket','Cabin'], axis=1)
 
 
 
-'''
-print('df_train')
-print(df_train)
-print 'df_test\n'
-print(df_test)
 
-print(inp_train)
-print(inp_test)
-print(out_train)
-
-'''
 
 learning_rate = 0.05
 weight_decay = 0.0001
